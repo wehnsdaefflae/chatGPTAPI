@@ -88,7 +88,7 @@ def main() -> None:
     file_name = r"resources/summary_02.txt"
 
     summary_file = "resources/summary.txt"
-    with open("resources/config.json", mode="r") as f:
+    with open("resources/config_summarize.json", mode="r") as f:
         config = json.load(f)
 
     openai.api_key = config["openai_secret"]
